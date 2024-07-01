@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Your Work</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Upload Your Work</h1>
+            <p>Submit your news articles or research papers for review and publication.</p>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index.html#news">News</a>
+                <a href="index.html#journals">Journals</a>
+                <a href="upload.html">Upload</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container" id="upload">
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required><br><br>
+                <label for="file">Upload File:</label>
+                <input type="file" id="file" name="file" required><br><br>
+                <label for="description">Description:</label><br>
+                <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Upload">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

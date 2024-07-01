@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A - Research and News Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Simple JavaScript check for admin status
+        const isAdmin = true; // Change to false to hide the admin panel
+
+        document.addEventListener("DOMContentLoaded", function() {
+            if (!isAdmin) {
+                document.querySelector('.admin').style.display = 'none';
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>A - Your Research and News Hub</h1>
+            <p>Explore the latest in research and news across various topics.</p>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#news">News</a>
+                <a href="#journals">Journals</a>
+                <a href="upload.html">Upload</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <section class="container" id="home">
+            <h2>Most Viewed</h2>
+            <div class="most-viewed">
+                <div class="item">Most Viewed Item 1</div>
+                <div class="item">Most Viewed Item 2</div>
+                <div class="item">Most Viewed Item 3</div>
+            </div>
+        </section>
+        <section class="container" id="news">
+            <h2>Latest News</h2>
+            <div class="latest-news">
+                <div class="item">News Article 1</div>
+                <div class="item">News Article 2</div>
+                <div class="item">News Article 3</div>
+            </div>
+        </section>
+        <section class="container" id="journals">
+            <h2>Latest Journals</h2>
+            <div class="latest-journals">
+                <div class="item">Journal Article 1</div>
+                <div class="item">Journal Article 2</div>
+                <div class="item">Journal Article 3</div>
+            </div>
+        </section>
+    </main>
+    <div class="container admin">
+        <h2>Admin Panel</h2>
+        <p>Manage uploaded content.</p>
+        <!-- List of uploaded items with edit and delete options -->
+        <div class="item">
+            <p>Sample Article 1</p>
+            <button>Edit</button>
+            <button>Delete</button>
+        </div>
+        <div class="item">
+            <p>Sample Article 2</p>
+            <button>Edit</button>
+            <button>Delete</button>
+        </div>
+        <!-- More items -->
+    </div>
+</body>
+</html>
